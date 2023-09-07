@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Hai Binarian!"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="284dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/radius"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawableStart="@drawable/spoon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Lagi mau mamam apa?" />
+
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+
+            android:layout_marginStart="60dp"
+            android:src="@drawable/baseline_search_24" />
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="1dp"
+
+        android:background="@color/white"
+        android:contentDescription="Tombol untuk belanja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shopping_cart" />
+
+    <ImageButton
+
+        android:id="@+id/imageButton2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="2dp"
+        android:background="@color/white"
+        android:contentDescription="tombol untuk profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_account_circle_24" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="387dp"
+        android:layout_height="142dp"
+        android:background="@color/hijau"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_nav1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="18dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ay"
+                android:scaleType="centerCrop"/>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textDiskon"
+            android:layout_toRightOf="@+id/card_nav1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diskon 30%"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textDiskon"
+            android:layout_toRightOf="@+id/card_nav1"
+            android:text="Pesan makanan lewat aplikasi dan dapatkan diskonmu "
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="386dp"
+
+        android:layout_height="97dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="89dp"
+            android:layout_height="90dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/img_nasi"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nasi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="Nasi" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="89dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/img_Mie"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mie1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:textSize="16sp"
+
+                android:text="Mie" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="89dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/img_snack"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/snack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:text="Snack"
+                android:textSize="16sp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="89dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/img_minuman"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/minum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:text="Minuman"
+                android:textSize="16sp"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="385dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="3dp"
+
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <TextView
+            android:id="@+id/TList"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif"
+
+            android:paddingTop="10dp"
+            android:text="Pilihan Menu Makanan"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="150dp"
+            android:background="@color/white"
+            android:contentDescription="Button list"
+            android:src="@drawable/list" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="400dp"
+        android:layout_height="324dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_editor_absoluteX="3dp">
+
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="4dp"
+            android:columnCount="4"
+            android:rowCount="6">
+
+
+            <RelativeLayout
+                android:id="@+id/R1"
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_marginStart="10dp">
+
+                <ImageView
+                    android:id="@+id/imgMenu1"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="5dp"
+
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bakar">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/textMenu1"
+                    android:layout_width="87dp"
+                    android:layout_height="31dp"
+
+                    android:layout_below="@+id/imgMenu1"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Ayam Bakar    Rp.50.000"
+                    android:textSize="13sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+
+
+                <ImageView
+                    android:id="@+id/bintang1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgMenu1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="88dp"
+
+
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="62dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@+id/textMenu1"
+                    android:src="@drawable/star">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgMenu1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="88dp"
+
+
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="4.9"
+                    android:textStyle="bold">
+
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/R3"
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_marginStart="10dp">
+
+                <ImageView
+                    android:id="@+id/imgMenu3"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="5dp"
+
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ayamgep">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/textMenu3"
+                    android:layout_width="87dp"
+                    android:layout_height="31dp"
+
+                    android:layout_below="@+id/imgMenu3"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Ayam Bakar    Rp.50.000"
+                    android:textSize="13sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+
+
+                <ImageView
+                    android:id="@+id/bintang3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgMenu3"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="62dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@+id/textMenu3"
+                    android:src="@drawable/star">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgMenu3"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+
+
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="4.9"
+                    android:textStyle="bold">
+
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/R2"
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_marginStart="10dp">
+
+                <ImageView
+                    android:id="@+id/imgMenu2"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="5dp"
+
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ayamgor">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/textMenu2"
+                    android:layout_width="87dp"
+                    android:layout_height="31dp"
+
+                    android:layout_below="@+id/imgMenu2"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Ayam Bakar    Rp.50.000"
+                    android:textSize="13sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+
+
+                <ImageView
+                    android:id="@+id/bintang2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgMenu2"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="62dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@+id/textMenu2"
+                    android:src="@drawable/star">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgMenu2"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+
+
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="4.9"
+                    android:textStyle="bold">
+
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/R4"
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_marginStart="10dp">
+
+                <ImageView
+                    android:id="@+id/imgMenu4"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="5dp"
+
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sate1">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/textMenu4"
+                    android:layout_width="87dp"
+                    android:layout_height="31dp"
+
+                    android:layout_below="@+id/imgMenu4"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Ayam Bakar    Rp.50.000"
+                    android:textSize="13sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+
+
+                <ImageView
+                    android:id="@+id/bintang4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgMenu4"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="62dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@+id/textMenu4"
+                    android:src="@drawable/star">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgMenu4"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+
+
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="4.9"
+                    android:textStyle="bold">
+
+                </TextView>
+            </RelativeLayout>
+
+        </GridLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
